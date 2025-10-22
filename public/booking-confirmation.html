@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Booking Confirmation - Weengz">
+    <title>Booking Confirmation - Weengz</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Weengz Home">
+                <i class="fas fa-plane-departure me-2" aria-hidden="true"></i>
+                <span class="font-bold">Weengz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Success Message -->
+        <div class="text-center mb-5">
+            <div class="mb-4">
+                <i class="fas fa-check-circle text-success" style="font-size: 100px;" aria-hidden="true"></i>
+            </div>
+            <h1 class="display-4 mb-3">Booking Confirmed!</h1>
+            <p class="lead text-muted">Thank you for choosing Weengz. Your flight has been successfully booked.</p>
+        </div>
+
+        <!-- Booking Details -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">
+                            <i class="fas fa-ticket-alt me-2" aria-hidden="true"></i>
+                            Booking Details
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- Booking Reference -->
+                        <div class="alert alert-info mb-4" role="status">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Booking Reference:</strong>
+                                    <h3 class="h4 mb-0 mt-1">#WNG-12345</h3>
+                                </div>
+                                <div>
+                                    <i class="fas fa-barcode fa-3x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flight Information -->
+                        <section class="mb-4">
+                            <h3 class="h5 mb-3 pb-2 border-bottom">Flight Information</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Flight Number</label>
+                                    <p class="mb-0 fw-bold">AA 1234</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Travel Class</label>
+                                    <p class="mb-0 fw-bold">Business Class</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Departure</label>
+                                    <p class="mb-0 fw-bold">New York (JFK)</p>
+                                    <p class="text-muted small mb-0">Dec 25, 2025 - 10:00 AM</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Arrival</label>
+                                    <p class="mb-0 fw-bold">Los Angeles (LAX)</p>
+                                    <p class="text-muted small mb-0">Dec 25, 2025 - 1:30 PM</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Seat Number</label>
+                                    <p class="mb-0 fw-bold">12A</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Gate</label>
+                                    <p class="mb-0 fw-bold">B22</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Passenger Information -->
+                        <section class="mb-4">
+                            <h3 class="h5 mb-3 pb-2 border-bottom">Passenger Information</h3>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Full Name</label>
+                                    <p class="mb-0 fw-bold">John Doe</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Email</label>
+                                    <p class="mb-0 fw-bold">john.doe@example.com</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Phone</label>
+                                    <p class="mb-0 fw-bold">+1 (555) 123-4567</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="text-muted small">Frequent Flyer #</label>
+                                    <p class="mb-0 fw-bold">FF123456789</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Payment Summary -->
+                        <section>
+                            <h3 class="h5 mb-3 pb-2 border-bottom">Payment Summary</h3>
+                            <div class="bg-light p-3 rounded">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Base Fare</span>
+                                    <span>$350.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Taxes & Fees</span>
+                                    <span>$45.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Seat Selection</span>
+                                    <span>$25.00</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold fs-5">
+                                    <span>Total Paid</span>
+                                    <span class="text-success">$420.00</span>
+                                </div>
+                                <p class="text-muted small mb-0 mt-2">
+                                    <i class="fas fa-info-circle me-1" aria-hidden="true"></i>
+                                    Payment method: Credit Card ending in 4242
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-4">
+                        <button class="btn btn-primary w-100" onclick="window.print()">
+                            <i class="fas fa-print me-2" aria-hidden="true"></i>
+                            Print Ticket
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary w-100">
+                            <i class="fas fa-download me-2" aria-hidden="true"></i>
+                            Download PDF
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-outline-primary w-100">
+                            <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                            Email Ticket
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Important Information -->
+                <div class="card border-warning mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h6 mb-0">
+                            <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
+                            Important Information
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li>Please arrive at the airport at least 2 hours before departure</li>
+                            <li>Check-in online 24 hours before your flight</li>
+                            <li>Bring a valid government-issued ID</li>
+                            <li>Review baggage allowances and restrictions</li>
+                            <li>Your confirmation email has been sent to your registered email address</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="text-center">
+                    <p class="mb-3">What would you like to do next?</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="dashboard.html" class="btn btn-primary">
+                            <i class="fas fa-home me-2" aria-hidden="true"></i>
+                            Go to Dashboard
+                        </a>
+                        <a href="index.html" class="btn btn-outline-primary">
+                            <i class="fas fa-search me-2" aria-hidden="true"></i>
+                            Book Another Flight
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5" role="contentinfo">
+        <div class="container">
+            <div class="text-center small">
+                <p>&copy; 2025 Weengz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
